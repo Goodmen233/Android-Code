@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">侨译官</string>
+
+    <string-array name="lan">
+        <item>自动识别</item>
+        <item>中文</item>
+        <item>英文</item>
+        <item>日语</item>
+        <item>德语</item>
+        <item>俄语</item>
+        <item>西班牙语</item>
+    </string-array>
+</resources>

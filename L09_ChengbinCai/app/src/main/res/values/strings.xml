@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">L09_ChengbinCai</string>
+    <string-array name="name_list">
+        <item>中国汉堡</item>
+        <item>麻辣烫</item>
+        <item>白切鸡</item>
+        <item>KFC</item>
+        <item>卤面</item>
+        <item>沙茶面</item>
+        <item>酸菜牛肉面</item>
+        <item>牛排</item>
+        <item>八宝粥</item>
+        <item>花生牛奶</item>
+        <item>高人拉面</item>
+        <item>泡面</item>
+        <item>蒸羊羔</item>
+        <item>蒸熊掌</item>
+        <item>蒸鹿尾儿</item>
+        <item>香肠</item>
+        <item>山鸡</item>
+        <item>盐鸡</item>
+        <item>龙虾</item>
+        <item>卤猪晾肉</item>
+        <item>银鱼</item>
+    </string-array>
+</resources>

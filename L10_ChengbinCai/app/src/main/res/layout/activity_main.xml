@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/LocationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toStartOf="@+id/TypeGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/InternalStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal Storage" />
+
+        <RadioButton
+            android:id="@+id/ExternalStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External Storage" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/TypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LocationGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LocationGroup"
+        app:layout_constraintTop_toTopOf="@+id/LocationGroup">
+
+        <RadioButton
+            android:id="@+id/PersistentFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persistent Files" />
+
+        <RadioButton
+            android:id="@+id/TemporaryCaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temporary Caches" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Storage Type"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TypeGroup"
+        app:layout_constraintStart_toStartOf="@+id/TypeGroup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Storage Location"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/LocationGroup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AbsolutePath"
+        android:layout_width="342dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="28dp"
+        android:text="Absolute Path: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationGroup" />
+
+    <Button
+        android:id="@+id/Download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="303dp"
+        android:text="Download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:text="Display"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Download"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Download"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
